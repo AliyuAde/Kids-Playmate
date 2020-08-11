@@ -1,0 +1,46 @@
+
+.content{
+    margin-top:40px;
+   
+}
+.buttons-action{
+    margin-left:5px;
+}
+
+.signup-text{
+    font-size: x-small;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    text-transform: none;
+
+}
+
+ion-input{
+    background-color: #ededed;
+    border-radius: 5px;
+    font-size: small;
+    width: 100%;
+}
+
+.actionbutton{
+    background-color: rgba(255, 196, 0, 0.911);
+    border-radius: 5px;
+    color: white;
+    margin-left: 45px;
+    margin-right: 13px;
+    font-size: small;
+    font-family: sans-serif;
+}
+
+.alert-wrapper {
+    background: #e5e5e5;
+  }
+  
+  /* Works - pass "my-custom-class" in cssClass to increase specificity */
+  .my-custom-class .alert-wrapper {
+    background: #e5e5e5;
+  }
+
+  .my-custom-class {
+    --background: #e5e5e5;
+  }

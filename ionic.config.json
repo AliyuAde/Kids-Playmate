@@ -1,0 +1,7 @@
+{
+  "name": "smartKid",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

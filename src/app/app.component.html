@@ -1,0 +1,71 @@
+<ion-app>
+  <ion-menu menuId="main-menu" contentId="main" color="warning">
+    <ion-content>
+      <div class="menu-header-bg"></div>
+      <div class="header-content">
+        <img src="assets/icon/ali.jpg" alt="">
+        <ion-label>
+          <h2>{{ username }}</h2>
+          <p>{{ emails }}</p>
+        </ion-label>
+      </div>
+
+      <div class="action-button">
+        <ion-button  (click)="goHome()" >
+          <ion-icon slot="start" name="barcode-outline"></ion-icon>My Book Shelf
+        </ion-button>
+      </div>
+
+      <ion-list class="menu-items" lines="none">
+        <ion-item [routerLink]="['/home/class-book', '1']">
+          <ion-icon name="book-outline"></ion-icon>Playmate One
+        </ion-item>
+
+        <ion-item [routerLink]="['/home/class-book', '2']">
+          <ion-icon name="reader-outline"></ion-icon>Playmate Two
+        </ion-item>
+
+        <ion-item  [routerLink]="['/home/class-book', '3']">
+          <ion-icon name="book-outline"> </ion-icon>Playmate Three
+        </ion-item>
+
+        <ion-item [routerLink]="['/home/class-book', '4']">
+          <ion-icon name="reader-outline"></ion-icon>Playmate Four
+        </ion-item>
+
+        <ion-item  [routerLink]="['/home/class-book', '5']">
+          <ion-icon name="book-outline"> </ion-icon>Playmate Five
+        </ion-item>
+
+        <ion-item [routerLink]="['/home/class-book', '6']">
+          <ion-icon name="reader-outline"></ion-icon>Playmate Six
+        </ion-item>
+
+      </ion-list>
+
+
+
+    </ion-content>
+    <ion-footer>
+      <ion-toolbar >
+
+        <ion-buttons  slot="start" style="font-size: 2em; ">
+          <ion-icon name="information-circle-outline"  ></ion-icon> 
+          
+        </ion-buttons>
+
+       
+    
+       <ion-buttons slot="end"  style=" font-size: 2em;">
+        <ion-icon name="power-outline" (click)="exitApp()" ></ion-icon>
+       </ion-buttons>
+    
+      
+       
+      </ion-toolbar>
+    </ion-footer>
+
+  </ion-menu>
+
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>

@@ -1,0 +1,31 @@
+<ion-header >
+  <ion-toolbar color="warning">
+    <ion-buttons style="font-size: 2em; color:white;">
+      <ion-back-button [text]="loadedBook.title" defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <pdf-viewer [src]="loadedBook.bookLink" [zoom]="zoom" [render-text]="true" [fit-to-page]="true" [external-link-target]="'self'"></pdf-viewer>    
+
+</ion-content>
+
+<ion-footer class="ion-no-border" >
+  <ion-toolbar color="warning">
+
+    <ion-buttons  slot="start" style="font-size: 3em; color:white;">
+      <ion-icon name="remove-circle" (click)="incZoom(-0.1)" ></ion-icon>   
+    </ion-buttons>
+
+
+   <ion-buttons slot="end"  style=" font-size: 3em; color:white;">
+    <ion-icon name="add-circle" (click)="incZoom(0.1)" ></ion-icon>
+   </ion-buttons>
+
+  
+   
+  </ion-toolbar>
+</ion-footer>

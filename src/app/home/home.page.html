@@ -1,0 +1,142 @@
+
+<ion-header>
+  <ion-toolbar  color="warning">
+    <ion-title style="color: aliceblue;">Kids Playmate</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"  id="main" style="color: aliceblue;"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding >
+  
+ 
+  <span class="head">
+    <h2>Playmate Basic One Shelf</h2>
+  </span>
+  <hr class="header">
+
+<ion-grid>
+  <ion-row>
+      <ion-col size-xs="4" size-sm="3" size-md="3" *ngFor="let ite of books1">
+
+        <ion-card button="true" [routerLink]="['/home/read', ite.id]" >
+          <ion-img [src]="ite.imgLink"></ion-img>   
+        </ion-card>
+  
+      </ion-col>
+      
+ </ion-row>
+    
+</ion-grid>
+
+
+<span class="head">
+  <h2>Playmate Basic Two Shelf</h2>
+</span>
+<hr class="header">
+
+<ion-grid>
+<ion-row>
+    <ion-col size-xs="4" size-sm="3" size-md="3" *ngFor="let item of books2">
+
+      <ion-card button="true" [routerLink]="['/home/read', item.id]" >
+        <ion-img [src]="item.imgLink"></ion-img>   
+      </ion-card>
+
+    </ion-col>
+    
+</ion-row>
+  
+</ion-grid>
+
+
+
+<span class="head">
+  <h2>Playmate Basic Three Shelf</h2>
+</span>
+<hr class="header">
+
+<ion-grid>
+<ion-row>
+    <ion-col size-xs="4" size-sm="3" size-md="3" *ngFor="let items of books3">
+
+      <ion-card button="true" [routerLink]="['/home/read', items.id]" >
+        <ion-img [src]="items.imgLink"></ion-img>   
+      </ion-card>
+
+    </ion-col>
+    
+</ion-row>
+  
+</ion-grid>
+
+
+<span class="head">
+  <h2>Playmate Basic Four Shelf</h2>
+</span>
+<hr class="header">
+
+<ion-grid>
+<ion-row>
+    <ion-col size-xs="4" size-sm="3" size-md="3" *ngFor="let itemz of books4">
+
+      <ion-card button="true" [routerLink]="['/home/read', itemz.id]" >
+        <ion-img [src]="itemz.imgLink"></ion-img>   
+      </ion-card>
+
+    </ion-col>
+    
+</ion-row>
+  
+</ion-grid>
+
+
+
+
+<span class="head">
+  <h2>Playmate Basic Five Shelf</h2>
+</span>
+<hr class="header">
+
+<ion-grid>
+<ion-row>
+    <ion-col size-xs="4" size-sm="3" size-md="3" *ngFor="let itemd of books5">
+
+      <ion-card button="true" [routerLink]="['/home/read', itemd.id]" >
+        <ion-img [src]="itemd.imgLink"></ion-img>   
+      </ion-card>
+
+    </ion-col>
+    
+</ion-row>
+  
+</ion-grid>
+
+
+
+
+<span class="head">
+  <h2>Playmate Basic Six Shelf</h2>
+</span>
+<hr class="header">
+
+<ion-grid>
+<ion-row>
+    <ion-col size-xs="4" size-sm="3" size-md="3" *ngFor="let itemt of books6">
+
+      <ion-card button="true" [routerLink]="['/home/read', itemt.id]" >
+        <ion-img [src]="itemt.imgLink"></ion-img>   
+      </ion-card>
+
+    </ion-col>
+    
+</ion-row>
+  
+</ion-grid>
+
+</ion-content>
+<ion-footer class="ion-no-border" >
+  <ion-toolbar color="warning" style="text-align: center; color: aliceblue; font-weight: bolder; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Powered by Chroniclesoft</ion-toolbar>
+</ion-footer>
